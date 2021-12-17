@@ -3,8 +3,6 @@
 class App{
     static function run($config){
         $path = "$_SERVER[DOCUMENT_ROOT]$_SERVER[REQUEST_URI]";
-        echo $path;
-        die;
         $page = isset(self::getPage($config->root,$path)[0])?self::getPage($config->root,$path)[0]:"";
         
         echo method_exists('siteController',$page)?(siteController::$page()):siteController::index(); 
