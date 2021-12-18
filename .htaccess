@@ -6,4 +6,4 @@ RewriteBase /~mi21098/naucni-klub/
 
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-RewriteRule . index.php [L]
+RewriteRule ^~mi21098/naucni-klub/(.*)$ /~mi21098/naucni-klub/index.php [L,QSA,NC]
