@@ -6,6 +6,7 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond $1 !^(index\.php)
+RewriteBase /~mi21098/naucni-klub
 
 # otherwise forward it to index.php
 RewriteRule ^(.+)$ ./index.php?$1 [L,QSA,NC]
