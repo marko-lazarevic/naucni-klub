@@ -1,3 +1,4 @@
+<Directory "/~mi21098/naucni-klub/">
 DirectoryIndex index.php
 
 AllowOverride All
@@ -9,3 +10,5 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization},L]
 RewriteRule ^~mi21098/naucni-klub/(.*)$ /~mi21098/naucni-klub/index.php [L,QSA,NC]
+
+</Directory>
